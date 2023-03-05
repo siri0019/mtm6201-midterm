@@ -11,14 +11,35 @@
 
 }
 
+a:focus {
+    outline: 3px solid #232e21;
+}
+
 .wrapper {
     max-width: 1200px;
     min-width: 760px;
+    margin: 0 auto;
+    padding: 0; 
+}
+
+.skip-links{
+    list-style: none;
     margin: 0;
     padding: 0;
+  }
+  .skip-links a{
+    position: absolute;
+    top: -3em;
+    background-color: black;
+    color:white;
+    padding: .5em 1em;
+    font-weight: bold;
+  }
 
+  .skip-links a:focus {
+    top:0;
+  }
 
-}
 body {
     font-family: 'Bahnschrift', sans-serif;
     line-height: 1.4;                                         
@@ -26,7 +47,7 @@ body {
 
 .container {
     max-width: 1200px;
-    margin: auto;
+    margin: 0 auto;
     overflow: hidden;
     padding: 0 3 rem;
 }
@@ -87,7 +108,7 @@ img {
 /* display background-image in header */
 .showcase::before {
     content: '';
-    background: url('../img/header-960_x_390.jpeg') no-repeat top center/cover;
+    background: url('../img/header-960.jpeg') no-repeat top center/cover;
     position: absolute;
     top: 0;
     left: 0;

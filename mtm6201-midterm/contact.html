@@ -68,69 +68,73 @@
         </header>
 
         <div class="body-wrap">
-            <main id="main">
-                <div class="about-us" id="about">
-                    <div class="first-about">
-                        <div class="text-about">
-                            <h2>About US</h2>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate laboriosam
-                                voluptas
-                                veniam aspernatur error adipisci unde voluptates quae sapiente quo iste repudiandae
-                                autem ducimus temporibus voluptatem, consequuntur neque? Nostrum, atque?</p>
+            <main>
+                <div class="bg-contact" id="contact">
+                    <div class="contact">
+                        <div class="container-contact" id="ct">
+                            <h2>Contact Us</h2>
+                        </div>
 
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate laboriosam
-                                voluptas
-                                veniam aspernatur error adipisci unde voluptates quae sapiente quo iste repudiandae
-                                autem ducimus temporibus voluptatem, consequuntur neque? Nostrum, atque?</p>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate laboriosam
-                                voluptas
-                                veniam aspernatur error adipisci unde voluptates quae sapiente quo iste repudiandae
-                                autem ducimus temporibus voluptatem, consequuntur neque? Nostrum, atque?</p>
-                        </div>
-                    </div>
+                        <!-- Send us a message -->
 
-                    <div class="image-about">
-                        <video id="video1" width="420" controls>
-                            <source src="video/bakery.mp4" type="video/mp4">
-                            <source src="video/bakery.ogg" type="video/ogg">
-                        </video>
-                    </div>
-                </div>
-                <div class="second-about">
-                    <div class="content-keto">
-                        <h3>What's about Keto?</h3>
-                        <div class="img-keto1">
-                            <img srcset="img/easy-keto-desserts-square-600.jpeg,
-                            img/easy-keto-desserts-square-1200.jpeg 2x" src="img/easy-keto-desserts-square-600.jpeg"
-                                alt="easy keto desserts">
+                        <div class="container-contact1" id="su">
+                            <h3>Send us a message</h3><br>
+
+                            <!-- adding form of Fullname, Email and message  -->
+                            <form action="#" method="get">
+                                <label for="fullname">Full Name</label>
+                                <input type="text" id="fullname" name="fname"><br><br>
+
+                                <label for="email">Email</label>
+                                <input type="email" id="email" name="email"><br><br>
+
+                                <label for="freeform">Message</label><br>
+                                <textarea name="freeform" id="freeform" cols="50" rows="4"></textarea><br><br>
+
+                                <div class="button">
+                                    <input type="submit" value="Send">
+                                </div>
+                            </form>
                         </div>
-                        <div class="text-keto">
-                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deleniti, quae? Culpa sunt
-                                necessitatibus incidunt velit omnis reprehenderit hic assumenda tempore doloribus
-                                magnam! Commodi, numquam sit dolor architecto omnis officiis ducimus?</p>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate laboriosam
-                                voluptas
-                                veniam aspernatur error adipisci unde voluptates quae sapiente quo iste repudiandae
-                                autem ducimus temporibus voluptatem, consequuntur neque? Nostrum, atque?</p>
+
+
+                        <!-- Hours of operation -->
+
+                        <div class="container-contact2" id="hr">
+                            <h3>Hours of operation</h3>
+
+                            <!-- creates table of operation's hours -->
+                            <table>
+                                <tr>
+                                    <th>Days</th>
+                                    <th>Hours</th>
+                                </tr>
+                                <tr>
+                                    <td>Monday - Friday</td>
+                                    <td>10 AM - 3 PM</td>
+                                </tr>
+                                <tr>
+                                    <td>Saturday - Sunday</td>
+                                    <td>11 AM - 3 PM</td>
+                                </tr>
+                            </table>
                         </div>
+
+
+                        <!-- Location -->
+
+                        <div class="container-contact3" id="mp">
+                            <h3>Location</h3><br>
+
+                            <!-- adding map -->
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d22402.850942406556!2d-75.71138440585102!3d45.42231713745106!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce0455aeda49df%3A0x36ba869dd5176e56!2s199%20Queen%20St%2C%20Ottawa%2C%20ON%20K1P%201K9!5e0!3m2!1sen!2sca!4v1678056660648!5m2!1sen!2sca" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+
                     </div>
                 </div>
-                <div class="content-flavour">
-                    <h3>Flavour Real Fruits?</h3>
-                    <div class="img-flavour">
-                        <img srcset="img/keto1-600.png,
-                            img/keto1-1200.png 2x" src="img/keto1-600.png" alt="flavours real fruits">
-                    </div>
-                    <div class="text-flavour">
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deleniti, quae? Culpa sunt
-                            necessitatibus incidunt velit omnis reprehenderit hic assumenda tempore doloribus
-                            magnam! Commodi, numquam sit dolor architecto omnis officiis ducimus?</p>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate laboriosam voluptas
-                            veniam aspernatur error adipisci unde voluptates quae sapiente quo iste repudiandae
-                            autem ducimus temporibus voluptatem, consequuntur neque? Nostrum, atque?</p>
-                    </div>
-                </div>
-            </main>
+            </Main>
+
+
         </div>
         <footer>
             <div class="content">
