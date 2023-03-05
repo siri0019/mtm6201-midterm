@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Icons stylesheet -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
     <!-- Fonts stylesheet -->
@@ -26,26 +26,31 @@
 
 <body>
     <div class="wrapper">
-    <!-- Adding background image and properties in the html including logo, Nav and Tel -->
-    <div class="menu-wrap">
-        <input type="checkbox" class="toggler">
-        <div class="hamburger"><div></div>
-        </div>
-        <div class="menu">
-            <div>
+        <!-- Adding background image and properties in the html including logo, Nav and Tel -->
+        <ul class="skip-links">
+            <li><a href="#nav">Skip to main nav</a></li>
+            <li><a href="#main">Skip to main content</a></li>
+        </ul>
+        <div class="menu-wrap">
+            <input type="checkbox" class="toggler">
+            <div class="hamburger">
+                <div></div>
+            </div>
+            <div class="menu" id="nav">
                 <div>
                     <div>
-                        <ul>
-                            <li><a href="index.html">Home</a></li>
-                            <li><a href="about.html">About</a></li>
-                            <li><a href="#">Product</a></li>
-                            <li><a href="#">Contact</a></li>
-                        </ul>
+                        <div>
+                            <ul>
+                                <li><a href="index.html">Home</a></li>
+                                <li><a href="about.html">About</a></li>
+                                <li><a href="product.html">Product</a></li>
+                                <li><a href="contact.html">Contact</a></li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
 
         <header class="showcase">
             <div class="container showcase-inner">
@@ -68,39 +73,46 @@
 
         <!-- Body section have About and product -->
         <div class="body-wrap">
-            <main>
+            <main id="main">
                 <div class="about-us" id="about">
                     <div class="first-about">
-                    <div class="text-about">
-                        <h2>About US</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate laboriosam voluptas veniam aspernatur error adipisci unde voluptates quae sapiente quo iste repudiandae autem ducimus temporibus voluptatem, consequuntur neque? Nostrum, atque?</p>
-                    </div>
-                    <div class="image-about">
-                        <video id="video1" width="420" controls="controls
-                        ">
-                        <source src="video/bakery.mp4" type="video/mp4">
-                        <source src="video/bakery.ogg" type="video/ogg">
-                    </video>
-                    </div>
+                        <div class="text-about">
+                            <h2>About US</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate laboriosam voluptas
+                                veniam aspernatur error adipisci unde voluptates quae sapiente quo iste repudiandae
+                                autem ducimus temporibus voluptatem, consequuntur neque? Nostrum, atque?</p>
+                        </div>
+                        <div class="image-about">
+                            <video id="video1" width="420" controls>
+                                <source src="video/bakery.mp4" type="video/mp4">
+                                <source src="video/bakery.ogg" type="video/ogg">
+                            </video>
+                        </div>
                     </div>
                     <div class="second-about">
                         <div class="content-keto">
                             <h3>What's about Keto?</h3>
                             <div class="img-keto1">
-                                <img srcset="img/easy-keto-desserts-square-1200_x_1200.jpeg,
-                                " alt="easy keto desserts">
+                                <img srcset="img/easy-keto-desserts-square-600.jpeg,
+                                img/easy-keto-desserts-square-1200.jpeg 2x"
+                                    src="img/easy-keto-desserts-square-600.jpeg" alt="easy keto desserts">
                             </div>
                             <div class="text-keto">
-                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deleniti, quae? Culpa sunt necessitatibus incidunt velit omnis reprehenderit hic assumenda tempore doloribus magnam! Commodi, numquam sit dolor architecto omnis officiis ducimus?</p>
+                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deleniti, quae? Culpa sunt
+                                    necessitatibus incidunt velit omnis reprehenderit hic assumenda tempore doloribus
+                                    magnam! Commodi, numquam sit dolor architecto omnis officiis ducimus?</p>
                             </div>
                         </div>
                         <div class="content-flavour">
                             <h3>Flavour Real Fruits?</h3>
                             <div class="img-flavour">
-                                <img src="img/keto1-1200_x_1300.png" alt="flavours real fruits">
+                                <img srcset="img/keto1-600.png,
+                                img/keto1-1200.png 2x" src="img/keto1-600.png" alt="flavours real fruits">
                             </div>
                             <div class="text-flavour">
-                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deleniti, quae? Culpa sunt necessitatibus incidunt velit omnis reprehenderit hic assumenda tempore doloribus magnam! Commodi, numquam sit dolor architecto omnis officiis ducimus?</p>
+                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deleniti, quae? Culpa sunt
+                                    necessitatibus incidunt velit omnis reprehenderit hic assumenda tempore doloribus
+                                    magnam! Commodi, numquam sit dolor architecto omnis officiis ducimus?</p>
                             </div>
                         </div>
                     </div>
@@ -110,16 +122,28 @@
                         <h2>Best Seller</h2>
                     </div>
                     <div class="img-product">
-                        <img src="img/cupcake-1200_x_900.jpeg" alt="Cupcake product">
+                        <img srcset="img/cupcake-600.jpeg,
+                        img/cupcake-1200.jpeg 2x" src="img/cupcake-600.jpeg" alt="Cupcake product">
                     </div>
                     <div class="text-product">
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequuntur quia repellat laudantium reiciendis corporis. Voluptatibus, quasi a, ab iusto delectus at mollitia impedit saepe optio cum ut, officiis sit nesciunt!</p>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequuntur quia repellat
+                            laudantium reiciendis corporis. Voluptatibus, quasi a, ab iusto delectus at mollitia impedit
+                            saepe optio cum ut, officiis sit nesciunt!</p>
                     </div>
                     <div class="button-product">
-                        <button type="button">Buy Now<span class="material-symbols-outlined">
-                            shopping_cart_checkout</span></button>
+                        <button type="button" aria-label="Add cupcake to your cart">Buy Now<span
+                                class="material-symbols-outlined">shopping_cart_checkout</span></button>
 
                     </div>
+                    <div class="promotion">
+                        <h2>Promotion</h2>
+                        <ol>
+                            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non quo pariatur, ab placeat</li>
+                            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate vel veritatis sunt?</li>
+                            <li>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odio totam modi explicabo remoptio </li>
+                        </ol>
+                    </div>
+
                 </div>
             </main>
 
@@ -133,35 +157,42 @@
                 </div>
                 <div class="middle1 box">
                     <div class="topic">Get to know us</div>
-                    <div><a href="#">-About Keto Gateau</a></div>
-                    <div><a href="#">-Products</a></div>
-                    <div><a href="#">-Services</a></div>
-                    <div><a href="#">-Shop location</a></div>
+                    <div><a href="about.html">-About Keto Gateau</a></div>
+                    <div><a href="product.html">-Products</a></div>
+                    <div><a href="product.html">-Services</a></div>
+                    <div><a href="contact.html">-Shop location</a></div>
                 </div>
 
                 <div class="middle2 box">
                     <div class="topic">Support</div>
-                    <div><a href="#">-Help</a></div>
-                    <div><a href="#">-Contact</a></div>
+                    <div><a href="contact.html">-Help</a></div>
+                    <div><a href="contact.html">-Contact</a></div>
                 </div>
+
                 <div class="right1 box">
-                    <div class="address">
-                        <i class="material-icons">home</i> 199 Queen St., Ottawa, ON K1P 5C9 
-                    </div> <br>
-                    <div class="hours">
-                        <span class="material-symbols-outlined">browse_gallery</span> Monday-Friday : 10.00am. - 15.00 pm.
-                        <p>Saturday-Sunday: 11.00am. - 15.00pm.</p>
-                    </div> <br>
-                    <div class="mail">
-                        <span class="material-symbols-outlined">contact_mail</span> info@ketogateauhouse.com
+                    <div class="contacts">
+                        <ul itemscope itemtype="https://schema.org/Person">
+                            <li itemprop="address"><i class="material-icons">home</i>199 Queen Street, Ottawa, ON K1P
+                                5C9
+                            </li>
+
+                            <li><span class="material-symbols-outlined">browse_gallery</span> Monday-Friday:10.00am. -
+                                15.00pm. <br>
+                                Saturday-Sunday: 11.00am. - 15.00pm.
+                            </li>
+
+                            <li itemprop="email"><span class="material-symbols-outlined">contact_mail</span>
+                                info@ketogateauhouse.com
+                            </li>
+                        </ul>
                     </div>
                 </div>
                 <div class="right2 box">
-                <div class="media-icons">
-                    <a href="#"><i class="fab fa-facebook-f"></i></a> <br>
-                    <a href="#"><i class="fab fa-instagram"></i></a> <br>
-                    <a href="#"><i class="fab fa-twitter"></i></a>
-                </div>
+                    <div class="media-icons">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a> <br>
+                        <a href="#"><i class="fab fa-instagram"></i></a> <br>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                    </div>
                 </div>
             </div>
             <div class="bottom">
