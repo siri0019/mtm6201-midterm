@@ -1,22 +1,29 @@
 :root {
-    --primary-color: #ebaeb7;
-    --overlay-color: #563440;
+    --primary-color: rgb(235, 173, 183, 0.15);
+    --overlay-color: rgb(86, 52, 64, 0.9);
     --menu-speed:0.75s;
 }
 
 * {
     box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+
 }
 
+.wrapper {
+    /* max-width: 960px;
+    min-width: 760px; */
+    margin: 0;
+    padding: 0;
+
+
+}
 body {
     font-family: 'Bahnschrift', sans-serif;
     line-height: 1.4;                                         
 }
 
 .container {
-    max-width: 960px;
+    max-width: 1000px;
     margin: auto;
     overflow: hidden;
     padding: 0 3 rem;
@@ -25,4 +32,80 @@ body {
 .showcase {
     background-color: var(--primary-color);
     color: #232e21;
+    height: 50vh;
+    width: 200vh;
+    position: relative;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-areas: 
+    "0 0 tel"
+    "0 0 logo"
+    "p p cart";
 }
+
+.showcase-inner {
+    grid-area: p;
+    text-align: start;
+    /* display: flex;
+    flex-direction: column;
+    align-items:start;
+    justify-content: left;
+    text-align: center;
+    height: 100%; */
+}
+
+
+
+.number-inner {
+    grid-area: tel;
+  
+
+}
+
+.logo-inner {
+    grid-area: logo;
+   
+}
+
+.shopping-inner {
+    grid-area: cart;
+ 
+}
+
+img {
+    width: 300px;
+    height: auto;
+}
+
+
+/* create background header with the height, color and bgcolor */
+
+/* display background-image in header */
+.showcase::before {
+    content: '';
+    background: url('../img/header-960_x_390.jpeg') no-repeat top center/cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+
+}
+
+/* Managing the position of content to go to butoom line overlay the background image */
+/* .showcase .shopping-inner {
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: center;
+    text-align: center;
+    height: 100%;
+} */
+
+/* Change font family for header */
+.showcase h1 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 2.5rem;
+}
+
