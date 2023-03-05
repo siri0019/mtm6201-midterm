@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Icons stylesheet -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
     <!-- Fonts stylesheet -->
@@ -24,7 +25,7 @@
 </head>
 
 <body>
-    <div class="wrapper"></div>
+    <div class="wrapper">
     <!-- Adding background image and properties in the html including logo, Nav and Tel -->
     <div class="menu-wrap">
         <input type="checkbox" class="toggler">
@@ -44,6 +45,7 @@
                 </div>
             </div>
         </div>
+    </div>
 
         <header class="showcase">
             <div class="container showcase-inner">
@@ -74,7 +76,10 @@
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate laboriosam voluptas veniam aspernatur error adipisci unde voluptates quae sapiente quo iste repudiandae autem ducimus temporibus voluptatem, consequuntur neque? Nostrum, atque?</p>
                     </div>
                     <div class="image-about">
-                        <video src="video/bakery.mp4" type="video/mp4"></video>
+                        <video id="video1" width="420">
+                        <source src="video/bakery.mp4" type="video/mp4">
+                        <source src="video/bakery.ogg" type="video/ogg">
+                    </video>
                     </div>
                     </div>
                     <div class="second-about">
@@ -102,10 +107,67 @@
                     <div class="seller">
                         <h2>Best Seller</h2>
                     </div>
+                    <div class="img-product">
+                        <img src="img/cupcake-1200_x_900.jpeg" alt="Cupcake product">
+                    </div>
+                    <div class="text-product">
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequuntur quia repellat laudantium reiciendis corporis. Voluptatibus, quasi a, ab iusto delectus at mollitia impedit saepe optio cum ut, officiis sit nesciunt!</p>
+                    </div>
+                    <div class="button-product">
+                        <button type="button">Buy Now<span class="material-symbols-outlined">
+                            shopping_cart_checkout</span></button>
+
+                    </div>
                 </div>
             </main>
 
         </div>
+        <footer>
+            <div class="content">
+                <div class="left box">
+                    <div class="upper">
+                        <img src="img/logos2.gif" alt="logo keto gateau">
+                    </div>
+                </div>
+                <div class="middle1 box">
+                    <div class="topic">Get to know us</div>
+                    <div><a href="#">-About Keto Gateau</a></div>
+                    <div><a href="#">-Products</a></div>
+                    <div><a href="#">-Services</a></div>
+                    <div><a href="#">-Shop location</a></div>
+                </div>
+
+                <div class="middle2 box">
+                    <div class="topic">Support</div>
+                    <div><a href="#">-Help</a></div>
+                    <div><a href="#">-Contact</a></div>
+                </div>
+                <div class="right1 box">
+                    <div class="address">
+                        <i class="material-icons">home</i> 199 Queen St., Ottawa, ON K1P 5C9 
+                    </div> <br>
+                    <div class="hours">
+                        <span class="material-symbols-outlined">browse_gallery</span> Monday-Friday : 10.00am. - 15.00 pm.
+                        <p>Saturday-Sunday: 11.00am. - 15.00pm.</p>
+                    </div> <br>
+                    <div class="mail">
+                        <span class="material-symbols-outlined">contact_mail</span> info@ketogateauhouse.com
+                    </div>
+                </div>
+                <div class="right2 box">
+                <div class="media-icons">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a> <br>
+                    <a href="#"><i class="fab fa-instagram"></i></a> <br>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                </div>
+                </div>
+            </div>
+            <div class="bottom">
+                <p>Copyright©2022 by Keto Gateau House Bakery</p>
+            </div>
+
+        </footer>
+    </div>
 
 
 
