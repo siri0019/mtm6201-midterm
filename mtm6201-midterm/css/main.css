@@ -1,7 +1,8 @@
 :root {
     --primary-color: rgb(235, 173, 183, 0.15);
     --overlay-color: rgb(86, 52, 64, 0.9);
-    --menu-speed:0.75s;
+    --menu-speed: 0.75s;
+    --h2-font: 'Mistral', sans-serif;                                                                                                                 
 }
 
 * {
@@ -17,88 +18,94 @@ a:focus {
 
 .wrapper {
     max-width: 1200px;
-    min-width: 760px;
+    min-width: 700px;
     margin: 0 auto;
-    padding: 0; 
+    padding: 0;
 }
 
-.skip-links{
+.skip-links {
     list-style: none;
     margin: 0;
     padding: 0;
-  }
-  .skip-links a{
+}
+
+.skip-links a {
     position: absolute;
     top: -3em;
     background-color: black;
-    color:white;
+    color: white;
     padding: .5em 1em;
     font-weight: bold;
-  }
+}
 
-  .skip-links a:focus {
-    top:0;
-  }
+.skip-links a:focus {
+    top: 0;
+}
 
 body {
     font-family: 'Bahnschrift', sans-serif;
-    line-height: 1.4;                                         
+    line-height: 1.4;
 }
 
 .container {
-    max-width: 1200px;
-    margin: 0 auto;
+    width: 100%;
+    margin: 0;
     overflow: hidden;
-    padding: 0 3 rem;
+    padding: 0;
 }
 
 .showcase {
     background-color: var(--primary-color);
     color: #232e21;
-    height: 65vh;
-    width: 167vh;
+    height: 50vh;
+    width: 130vh;
     position: relative;
     display: grid;
-    grid-template-columns: auto auto auto;
-    grid-template-areas: 
-    "0 0 tel"
-    "0 0 logo"
-    "p p cart";
+    grid-template-columns: auto auto auto auto;
+    grid-template-areas:
+        "0 0 0 tel"
+        "0 0 0 logo"
+        "p p cart cart";
 }
 
 .showcase-inner {
     grid-area: p;
     height: 100%;
-
-
-    /* display: flex;
-    flex-direction: column;
-    align-items:start;
-    justify-content: left;
-    text-align: center;
-    height: 100%; */
+    color: #faf6f6;
+    padding-left: 20px;
 }
-
 
 
 .number-inner {
     grid-area: tel;
-  
+    text-align: end;
+    font-size: 25px;
+    padding-right: 30px;
+    padding-top: 5px;
+
 
 }
 
 .logo-inner {
     grid-area: logo;
-   
+    text-align: end;
+    padding-right: 20px;
+
 }
 
 .shopping-inner {
     grid-area: cart;
- 
+    text-align: right;
+    padding-right: 10vh;
+  
+}
+
+.shopping-inner span {
+    font-size: 50px;
 }
 
 img {
-    width: 300px;
+    width: 350px;
     height: auto;
 }
 
@@ -134,11 +141,16 @@ img {
     font-size: 2.5rem;
 }
 
+h2, h3 {
+    font-family: var(--h2-font);
+    font-size: 35px;
+}
 
 
 
 
 
+/* footer design with flex property including nav, logo, contact, and social media  */
 footer {
     width: 100%;
     margin: 0 auto;
@@ -149,37 +161,36 @@ footer {
     color: #e8aeb7;
 }
 
-footer span {
+footer span, i {
     color: #000000;
 }
 
-footer i {
-    color: #000000; 
-}
 
 footer .content {
-    max-width: 1200px;
-
+    /* max-width: 1200px; */
     padding: 20px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
 }
 
-footer .content p,a {
+footer .content p, a {
     color: #e8aeb7;
 }
 
 
 footer .content .box {
-    width: 25%, 25%, 15%, 40%, 15%;
+    width: 20%;
     transition: all 0.4s ease;
+}
+
+footer .content .right2 {
+    text-align: right;
 }
 
 footer .content .topic {
     font-size: 18px;
     margin-bottom: 16px;
-
 }
 
 footer img {
@@ -187,11 +198,12 @@ footer img {
     height: auto;
     float: left;
 }
+
 footer content p {
     text-align: justify;
 }
-
-footer .content .media-icons a{
+/* Designing social media with white border */
+footer .content .media-icons a {
     font-size: 16px;
     height: 45px;
     width: 45px;
@@ -202,14 +214,19 @@ footer .content .media-icons a{
     border: 2px solid #faf6f6;
     margin: 20px 5px 0 0;
     transition: all 0.3s ease;
-    align-items:flex-end;
-  }
+    align-items: flex-end;
+}
 
-  .content .media-icons a:hover{
+/* social media shows red sign when mouse put in */
+.content .media-icons a:hover {
     border-color: #eb2f06;
-  }
-  footer .bottom{
+    transition: transform 0.5s;
+    transform: rotate(1turn);
+}
+
+/* Puting copyright on the left side */
+footer .bottom {
     width: 100%;
     text-align: left;
     padding: 0 40px 5px 0;
-  }
+}

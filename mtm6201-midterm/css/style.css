@@ -1,18 +1,18 @@
 .menu-wrap {
-    position: fixed;
+    position: absolute;
     top: 0;
-    left: 0;
+    left: 0 auto;
     z-index: 1;
 }
 
 .menu-wrap .toggler {
     position: absolute;
     top: 0;
-    left: 0;
+    left: 0 auto;
     z-index: 2;
     cursor: pointer;
     width: 50px;
-    height: 50px;
+    height: 60px;
     opacity: 0;
 
 
@@ -21,7 +21,7 @@
 .menu-wrap .hamburger {
     position: absolute;
     top: 0;
-    left: 0;
+    left: 0 auto;
     z-index: 1;
     width: 60px;
     height: 60px;
@@ -94,9 +94,9 @@
 
 .menu-wrap .menu {
     position: fixed;
-    top: 5;
-    left: 0;
-    width: 54%;
+    top: 4;
+    left: 0 auto;
+    width: 30%;
     height: 60%;
     visibility: hidden;
     overflow: hidden;
@@ -109,7 +109,7 @@
     background: var(--overlay-color);
     border-radius: 3%;
     padding-top: 50px;
-    width: 30vw;
+    width: 40vw;
     height: 50vw;
     display: flex;
     flex: none;
@@ -121,7 +121,7 @@
 
 .menu-wrap .menu > div > div {
     text-align: left;
-    max-width: 30vw;
+    max-width: 40vw;
     max-height: 50vw;
     opacity: 0;
     transition: opacity 0.4s ease;
