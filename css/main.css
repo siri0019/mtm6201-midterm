@@ -129,6 +129,11 @@ img {
     font-size: 1.5rem;
 }
 
+.showcase h2 {
+    font-family: 'Bahnschrift', sans-serif;
+    font-size: 1.2rem;
+}
+
 /* Setting element of font for H2 and H3 by using root */
 h2,
 h3 {
