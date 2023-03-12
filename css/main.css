@@ -203,6 +203,7 @@ h3 {
 
 .button-keto #button1 {
     color: rgb(255, 255, 255);
+    background-color: #00007C;
     border-radius: 7px;
     font-size: 18px;
     padding: 10px;
@@ -216,6 +217,7 @@ h3 {
 
 .button-flavour #button2 {
     color: white;
+    background-color: #00007C;
     border-radius: 7px;
     font-size: 18px;
     padding: 10px;
