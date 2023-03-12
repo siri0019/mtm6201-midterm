@@ -146,7 +146,7 @@ h3 {
 
 /* Setting bgcolor and  video position in the center */
 .first-about {
-    background-color: #e8aeb7;
+    background-color: #f19eab;
     position: relative;
     padding: 20px;
 }
@@ -154,13 +154,13 @@ h3 {
 
 .text-about p {
     text-align: justify;
-    color: #faf6f6;
+    color: white;
 }
 
 .image-about {
     text-align: center;
     padding-top: 15px;
-    background-color: #e8aeb7;
+    background-color: #f19eab;
 }
 
 /* Subheading what about Keto and Flavour real fruit */
@@ -199,7 +199,7 @@ h3 {
 }
 
 .content-keto button {
-    background-color: #30bced;
+    background-color: #1e9dcb;
     color: white;
     border-radius: 7px;
     width: 120px;
@@ -213,7 +213,7 @@ h3 {
 }
 
 .content-flavour button {
-    background-color: #30bced;
+    background-color: #1e9dcb;
     color: white;
     border-radius: 7px;
     width: 120px;
@@ -352,7 +352,7 @@ h3 {
 
 /* Adding color-bg and font, font-size for button */
 .container-contact1 form .button input {
-    background-color: #30bced;
+    background-color: #2da8d4;
     color: white;
     border-radius: 10px;
     width: 80px;
