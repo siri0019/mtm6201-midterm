@@ -154,7 +154,7 @@ h3 {
 
 .text-about p {
     text-align: justify;
-    color: white;
+    color: #222;
 }
 
 .image-about {
@@ -199,7 +199,7 @@ h3 {
 }
 
 .content-keto button {
-    background-color: #1e9dcb;
+    background-color: #1F5F76;
     color: white;
     border-radius: 7px;
     width: 120px;
@@ -213,7 +213,7 @@ h3 {
 }
 
 .content-flavour button {
-    background-color: #1e9dcb;
+    background-color: #1F5F76;
     color: white;
     border-radius: 7px;
     width: 120px;
@@ -352,7 +352,7 @@ h3 {
 
 /* Adding color-bg and font, font-size for button */
 .container-contact1 form .button input {
-    background-color: #2da8d4;
+    background-color: #1F5F76;
     color: white;
     border-radius: 10px;
     width: 80px;
