@@ -434,6 +434,7 @@ a {
     font-size: 10px;
 }
 
+/* Devided the part with width */
 footer .content .left {
     width: 10%;
     transition: all 0.4s ease;
@@ -461,17 +462,18 @@ footer .content .right2 {
     text-align: right;
 }
 
-
+/* Changing font size of topic support and Get to know us */
 footer .content .box .topic {
     font-size: 13px;
     margin-bottom: 16px;
 }
 
+/* Changing font size of address */
 footer .content .box li {
     font-size: 10px;
     list-style: none;
 }
-
+ /* Changing size of logo */
 footer .upper img {
     width: 90px;
     height: auto;
