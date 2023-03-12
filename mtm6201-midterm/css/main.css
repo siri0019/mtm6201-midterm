@@ -54,7 +54,7 @@ body {
 /* Heading style with grid property */
 .container {
     width: 100%;
-    margin: 0;
+    margin: 0 auto;
     overflow: hidden;
     padding: 0;
 }
@@ -63,7 +63,7 @@ body {
     background-color: var(--primary-color);
     color: #232e21;
     height: 50vh;
-    width: 601px;
+    width: 100%;
     position: relative;
     display: grid;
     grid-template-columns: auto auto;
@@ -85,7 +85,7 @@ body {
 .number-inner {
     grid-area: tel;
     text-align: end;
-    font-size: 10px;
+    font-size: 15px;
     padding-right: 5vh;
     padding-top: 5px;
     color: #232e21;
@@ -105,6 +105,7 @@ body {
     text-align: right;
     padding-right: 15vh;
 
+
 }
 
 .shopping-inner span {
@@ -112,7 +113,7 @@ body {
 }
 
 img {
-    width: 170px;
+    width: 180px;
     height: auto;
 }
 
@@ -143,6 +144,182 @@ h3 {
     padding: 5px;
 }
 
+
+/**************** About Us *************************/
+.body-wrap {
+    width: 100%;
+    margin: 0 auto;
+}
+
+/* Setting bgcolor and  video position in the center */
+.first-about {
+    background-color: #e8aeb7;
+    position: relative;
+    padding: 20px;
+}
+
+
+.text-about p {
+    text-align: justify;
+    color: #faf6f6;
+}
+
+.image-about {
+    text-align: center;
+    padding-top: 15px;
+    background-color: #e8aeb7;
+}
+
+/* Subheading what about Keto and Flavour real fruit */
+.second-about {
+    padding: 20px;
+    position: relative;
+}
+
+.second-about h3,
+.img-keto1,
+.img-flavour {
+    text-align: center;
+    padding: 10px;
+}
+
+.second-about p {
+    text-align: justify;
+
+}
+
+/******* About Page **********/
+.first-about1 {
+    background-color: #e8aeb7;
+    position: relative;
+    padding: 20px;
+}
+
+.second-about1 h3,
+.img-keto1,
+.img-flavour {
+    text-align: center;
+    padding: 10px;
+}
+
+.second-about1 p {
+    text-align: justify;
+
+}
+
+.content-keto button {
+    background-color: #30bced;
+    color: white;
+    border-radius: 7px;
+    width: 120px;
+    font-size: 18px;
+    padding: 5px;
+}
+
+.content-flavour h3 {
+    border-top: 2px solid #232e21;
+    margin-top: 5px;
+}
+
+.content-flavour button {
+    background-color: #30bced;
+    color: white;
+    border-radius: 7px;
+    width: 120px;
+    font-size: 18px;
+    padding: 5px;
+}
+
+/**************** Product *******************/
+.product {
+    padding: 20px;
+    position: relative;
+    background-color: #e8aeb7;
+}
+
+/* Setting best sell is in the center of box and changing color that using bgcolor and text align */
+.product .seller1 {
+    background-color: #563440;
+    color: #aafcb8;
+    text-align: center;
+
+}
+
+.seller h2 {
+    background-color: #e8aeb7;
+    color: #563440;
+    padding: 10px;
+    text-align: left;
+}
+
+.img-product {
+    padding-top: 10px;
+}
+
+.seller1 p {
+    padding: 10px;
+    text-align: justify;
+}
+
+.button-product {
+    padding: 10px;
+}
+
+.button-product button {
+    background-color: #055813;
+    border-color: #06811a;
+    color: white;
+    border-radius: 7px;
+    width: 150px;
+    font-size: 17px;
+    padding: 5px;
+
+}
+
+/* Promotion */
+.promotion {
+    padding: 20px;
+    text-align: center;
+}
+
+.promotion ol li {
+    list-style-position: inside;
+}
+
+/**************** Product page ****************/
+.product1 {
+    display: grid;
+    padding: 15px;
+    background-color: #e8aeb7;
+    position: relative;
+    max-width: 1200px;
+}
+
+.seller1 h2 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+.seller2 {
+    grid-row-start: 2;
+    grid-row-end: 3;
+    display: flex;
+    flex-direction: column;
+    background-color: #4f2030;
+    color: #faf6f6;
+    text-align: center;
+    padding-top: 15px;
+}
+
+/* Promotion */
+.promotion1 {
+    padding: 20px;
+    text-align: center;
+}
+
+.promotion1 ol li {
+    list-style-position: inside;
+}
 
 /********************** Contact Us******************/
 .bg-contact {
@@ -226,7 +403,7 @@ th {
 /************************* Footer *****************/
 /* footer design with flex property including nav, logo, contact, and social media  */
 footer {
-    width: 600px;
+    width: 100%;
     height: auto;
     margin: 0 auto;
     position: initial;
@@ -244,8 +421,7 @@ i {
 
 
 footer .content {
-    width: 600px;
-    padding: 5px;
+    width: 100% padding: 5px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -257,16 +433,37 @@ a {
     font-size: 10px;
 }
 
-
-footer .content .box {
-    width: 32%;
+footer .content .left {
+    width: 10%;
     transition: all 0.4s ease;
+
+}
+
+footer .content .middle1 {
+    width: 15%;
+    transition: all 0.4s ease;
+
+}
+
+footer .content .middle2 {
+    width: 7%;
+    transition: all 0.4s ease;
+
+}
+
+
+footer .content .right1 {
+    width: 35%;
+    transition: all 0.4s ease;
+
 }
 
 footer .content .right2 {
+    width: 5%;
+    transition: all 0.4s ease;
     text-align: right;
-
 }
+
 
 footer .content .box .topic {
     font-size: 13px;
@@ -274,11 +471,12 @@ footer .content .box .topic {
 }
 
 footer .content .box li {
-    font-size: 12px;
+    font-size: 10px;
+    list-style: none;
 }
 
 footer .upper img {
-    width: 150px;
+    width: 90px;
     height: auto;
     float: left;
 }
@@ -337,14 +535,15 @@ footer .bottom {
 
 
 /*********** Desktop Screen **************/
-@media screen and (min-width: 610px) {
+@media screen and (min-width: 690px) {
 
     body {
-        font-size: 18px;
+        font-size: 20px;
     }
 
     .showcase {
-        width: 1200px;
+        width: 100%;
+        height: 60vh;
         position: relative;
         display: grid;
         grid-template-columns: auto auto auto auto;
@@ -362,7 +561,7 @@ footer .bottom {
 
     .number-inner {
         grid-area: tel;
-        font-size: 28px;
+        font-size: 22px;
         padding-right: 30px;
         padding-top: 10px;
 
@@ -388,7 +587,7 @@ footer .bottom {
     }
 
     img {
-        width: 350px;
+        width: 300px;
         height: auto;
     }
 
@@ -410,6 +609,191 @@ footer .bottom {
         font-size: 40px;
         padding: 10px;
     }
+
+
+
+    /******************** About Us **********************/
+    #about .first-about {
+        display: grid;
+        grid-template-columns: 1fr 680px;
+    }
+
+    #about .first-about p {
+        font-size: 22px;
+    }
+
+    #about .image-about video {
+        width: 550px;
+    }
+
+    /* Setting what's about keto and flavours real fruits by using  grid property */
+    .second-about {
+        width: 100%;
+        display: grid;
+        grid-template-columns: auto auto;
+        gap: 20px;
+        grid-template-areas:
+            "keto flavour"
+            "keto flavour";
+    }
+
+    .content-keto {
+        grid-area: keto;
+        display: grid;
+        grid-template-columns: 40% 55%;
+        font-size: 16px;
+
+    }
+
+    .content-keto h3 {
+        grid-column-start: 1;
+        grid-column-end: 3;
+        border-top: none;
+    }
+
+    .img-keto1 {
+        grid-row-start: 2;
+        grid-row-end: 4;
+    }
+
+    .text-keto {
+        grid-row-start: 2;
+        grid-row-end: 2;
+        padding-left: 15px;
+    }
+
+    .button-keto {
+        grid-row-start: 3;
+        grid-row-end: 4;
+    }
+
+    .content-flavour {
+        grid-area: flavour;
+        position: relative;
+        display: grid;
+        grid-template-columns: 40% 55%;
+        font-size: 16px;
+
+    }
+
+    .content-flavour h3 {
+        grid-column-start: 1;
+        grid-column-end: 3;
+        border-top: none;
+
+    }
+
+    .img-flavour {
+        grid-row-start: 2;
+        grid-row-end: 4;
+    }
+
+    .text-flavour {
+        grid-row-start: 2;
+        grid-row-end: 2;
+        padding-left: 15px;
+    }
+
+    .button-flavour {
+        grid-row-start: 3;
+        grid-row-end: 4;
+    }
+
+    .second-about h3 {
+        font-size: 30px;
+        text-align: start;
+    }
+
+    .second-about .button-keto {
+        font-size: 18px;
+
+    }
+
+    .second-about img {
+        width: 180px;
+
+    }
+
+    /************* Products *******************/
+    .product {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        grid-template-areas:
+            "h2 h2 h2"
+            "text text promotion";
+    }
+
+    .seller h2 {
+        grid-area: h2;
+        align-content: flex-start;
+        color: #4f2030;
+
+    }
+
+    .seller1 {
+        grid-area: text;
+        width: 0 auto;
+        display: grid;
+        grid-template-columns: 55% 45%;
+        align-content: center;
+    }
+
+    .promotion {
+        grid-area: promotion;
+    }
+
+    .img-product {
+
+        grid-row-start: 1;
+        grid-row-end: 3;
+    }
+
+    .text-product {
+        grid-row-start: 1;
+        grid-row-end: 2;
+        font-size: 18px;
+    }
+
+    .button-product {
+        grid-row-start: 2;
+        grid-row-end: 3;
+    }
+
+    .img-product img {
+        width: 350px;
+
+    }
+
+    .button-product button {
+
+        width: 190px;
+        font-size: 22px;
+        padding: 10px;
+    }
+
+    /**************** Product page ****************/
+    .product1 {
+        width: 100%;
+  
+    }
+
+    .seller1 h2 {
+        display: flex;
+        flex-direction: row;
+
+    }
+
+    .seller2 {
+
+        display: flex;
+        flex-direction: column;
+        background-color: #4f2030;
+        color: #faf6f6;
+        text-align: center;
+        padding-top: 15px;
+    }
+
+
 
     /*************************** Contact Us ***************** */
     /* Using Grid layout for design contact us page with rows and columns */
@@ -487,52 +871,21 @@ footer .bottom {
 
 
 
-/* *************Footer************ */
+    /* *************Footer************ */
 
     /* footer design with flex property including nav, logo, contact, and social media  */
     footer {
-        width: 1200px;
+        width: 100%;
     }
 
     footer .content {
-        width: 1200px;
+        width: 100%;
         padding: 5px;
     }
 
     footer .content p,
     a {
-        font-size: 20px;
-    }
-
-    footer .content .left {
-        width: 10%;
-        transition: all 0.4s ease;
-        %
-    }
-
-    footer .content .middle1 {
-        width: 15%;
-        transition: all 0.4s ease;
-        %
-    }
-
-    footer .content .middle2 {
-        width: 7%;
-        transition: all 0.4s ease;
-        %
-    }
-
-
-    footer .content .right1 {
-        width: 35%;
-        transition: all 0.4s ease;
-        %
-    }
-
-    footer .content .right2 {
-        width: 5%;
-        transition: all 0.4s ease;
-        %
+        font-size: 18px;
     }
 
 
@@ -541,15 +894,15 @@ footer .bottom {
     }
 
     footer .content .box li {
-        font-size: 20px;
+        font-size: 18px;
         list-style: none;
     }
 
 
 
     footer .upper img {
-        width: 180px;
-        padding-right: 25px;
+        width: 200px;
+        padding-right: 30px;
 
     }
 

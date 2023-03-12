@@ -5,6 +5,9 @@
     top: 0;
     left: 0 auto;
     z-index: 1;
+    max-width: none;
+    min-width: 900px;
+    
 }
 
 .menu-wrap .toggler {
@@ -97,33 +100,35 @@
     position: fixed;
     top: 4;
     left: 0 auto;
-    width: 35%;
+    width: 60%;
     height: 70%;
     visibility: hidden;
     overflow: hidden;
     display: flex;
     align-items: flex-start;
-    justify-content: left;
+    justify-content: center;
+    
 }
 
 .menu-wrap .menu>div {
     background: var(--overlay-color);
     border-radius: 3%;
     padding-top: 10px;
-    width: 40vw;
-    height: 50vw;
+    width: 55vw;
+    height: 65vw;
     display: flex;
     flex: none;
     align-items: flex-start;
-    justify-content: right;
+    justify-content:center;
     transform: scale(0);
     transition: all 0.4s ease;
+   
 }
 
 .menu-wrap .menu>div>div {
-    text-align: left;
-    max-width: 40vw;
-    max-height: 50vw;
+    text-align: center;
+    max-width: 55vw;
+    max-height: 70vw;
     opacity: 0;
     transition: opacity 0.4s ease;
 }
@@ -131,8 +136,9 @@
 .menu-wrap .menu>div>div>div>ul>li {
     list-style: none;
     color: white;
-    font-size: 2rem;
-    padding: 0.8rem;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 600;
+    padding: 1.4rem;
 }
 
 
@@ -140,6 +146,8 @@
     color: inherit;
     text-decoration: none;
     transition: color 0.4s ease;
+    font-size: 18px;
+    width: 100%;
 }
 
 .menu-wrap .menu>div>div>div>ul>li>a:hover {
@@ -152,7 +160,7 @@
 /******************** desktop ****************/
 
 
-@media screen and (min-width: 610px) {
+@media screen and (min-width: 690px) {
 
     /* Making menu Hamburger and toggler for navigation bar */
 
@@ -173,11 +181,13 @@
 
     .menu-wrap .menu>div {
         padding-top: 50px;
+        width: 40vw;
+        height: 65vw;
     }
 
     .menu-wrap .menu > div > div > div > ul > li {
-        font-size: 3rem;
-        padding: 1.6rem;
+        
+        padding: 2rem;
     }
 
 
@@ -185,7 +195,9 @@
         color: inherit;
         text-decoration: none;
         transition: color 0.4s ease;
-        font-size: 28px;
+        font-size: 26px;
+        width: 100%;
+       
     }
 
     .menu-wrap .menu>div>div>div>ul>li>a:hover {
