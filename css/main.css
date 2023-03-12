@@ -180,9 +180,12 @@ h3 {
     text-align: justify;
 }
 
+
+
 /******* About Page **********/
 .first-about1 {
-    background-color: #e8aeb7;
+    background-color: #f19eab;
+    ;
     position: relative;
     padding: 20px;
 }
@@ -198,13 +201,12 @@ h3 {
     text-align: left;
 }
 
-.content-keto button {
-    background-color: #1F5F76;
-    color: white;
+.button-keto #button1 {
+    color: rgb(255, 255, 255);
     border-radius: 7px;
-    width: 120px;
     font-size: 18px;
-    padding: 5px;
+    padding: 10px;
+
 }
 
 .content-flavour h3 {
@@ -212,14 +214,14 @@ h3 {
     margin-top: 5px;
 }
 
-.content-flavour button {
-    background-color: #1F5F76;
+.button-flavour #button2 {
     color: white;
     border-radius: 7px;
-    width: 120px;
     font-size: 18px;
-    padding: 5px;
+    padding: 10px;
 }
+
+
 
 /**************** Product *******************/
 .product {
@@ -263,6 +265,12 @@ h3 {
     width: 150px;
     font-size: 17px;
     padding: 5px;
+}
+
+.button-product button:hover {
+    background-color: #f4f7f4;
+    border-color: #06811a;
+    color: #055813;
 }
 
 /* Promotion */

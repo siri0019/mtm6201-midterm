@@ -7,7 +7,7 @@
     z-index: 1;
     max-width: none;
     min-width: 900px;
-    
+
 }
 
 .menu-wrap .toggler {
@@ -107,7 +107,7 @@
     display: flex;
     align-items: flex-start;
     justify-content: center;
-    
+
 }
 
 .menu-wrap .menu>div {
@@ -119,10 +119,10 @@
     display: flex;
     flex: none;
     align-items: flex-start;
-    justify-content:center;
+    justify-content: center;
     transform: scale(0);
     transition: all 0.4s ease;
-   
+
 }
 
 .menu-wrap .menu>div>div {
@@ -136,7 +136,7 @@
 .menu-wrap .menu>div>div>div>ul>li {
     list-style: none;
     color: white;
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-weight: 600;
     padding: 1.4rem;
 }
@@ -152,6 +152,31 @@
 
 .menu-wrap .menu>div>div>div>ul>li>a:hover {
     color: deeppink;
+}
+
+/* Barwave for decorate promotiom by using animation */
+
+.button-keto .button-flavour {
+    margin: auto;
+}
+
+@keyframes changeBg {
+    from {
+        background-color: blue;
+    }
+
+    to {
+        background-color: rgb(246, 77, 105);
+    }
+}
+
+
+
+.button-keto #button1,
+.button-flavour #button2 {
+    animation-name: changeBg;
+    animation-duration: 2.5s;
+    animation-iteration-count: infinite;
 }
 
 
@@ -185,8 +210,8 @@
         height: 65vw;
     }
 
-    .menu-wrap .menu > div > div > div > ul > li {
-        
+    .menu-wrap .menu>div>div>div>ul>li {
+
         padding: 2rem;
     }
 
@@ -197,7 +222,7 @@
         transition: color 0.4s ease;
         font-size: 26px;
         width: 100%;
-       
+
     }
 
     .menu-wrap .menu>div>div>div>ul>li>a:hover {
