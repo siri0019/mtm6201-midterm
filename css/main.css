@@ -158,7 +158,7 @@ h3 {
 
 
 .text-about p {
-    text-align: justify;
+    text-align: start;
     color: #222;
 }
 
@@ -182,7 +182,7 @@ h3 {
 }
 
 .second-about p {
-    text-align: justify;
+    text-align: start;
 }
 
 
@@ -190,7 +190,6 @@ h3 {
 /******* About Page **********/
 .first-about1 {
     background-color: #f19eab;
-    ;
     position: relative;
     padding: 20px;
 }
