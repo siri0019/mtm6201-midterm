@@ -162,11 +162,11 @@
 
 @keyframes changeBg {
     from {
-        background-color: blue;
+        background-color: rgb(0, 0, 124);
     }
 
     to {
-        background-color: rgb(246, 77, 105);
+        background-color: rgb(144, 2, 25);
     }
 }
 
