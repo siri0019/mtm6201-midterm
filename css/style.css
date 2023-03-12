@@ -2,8 +2,8 @@
 /* Making menu Hamburger and toggler for navigation bar */
 .menu-wrap {
     position: absolute;
-    top: 0;
-    left: 0 auto;
+    top: auto;
+    left: auto;
     z-index: 1;
     max-width: none;
     min-width: 900px;
@@ -13,7 +13,7 @@
 .menu-wrap .toggler {
     position: absolute;
     top: 0;
-    left: 0 auto;
+    left: auto;
     z-index: 2;
     cursor: pointer;
     width: 50px;
@@ -25,7 +25,7 @@
 .menu-wrap .hamburger {
     position: absolute;
     top: 0;
-    left: 0 auto;
+    left: auto;
     z-index: 1;
     width: 60px;
     height: 60px;
@@ -98,8 +98,8 @@
 
 .menu-wrap .menu {
     position: fixed;
-    top: 4;
-    left: 0 auto;
+    top: 1%;
+    left: auto;
     width: 60%;
     height: 70%;
     visibility: hidden;

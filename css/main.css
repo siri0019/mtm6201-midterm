@@ -9,7 +9,6 @@
     box-sizing: border-box;
     margin: 0 auto;
     padding: 0;
-
 }
 
 /* Adding accessibility of Skip link in the top of homepage that is visible when using keyboard  */
@@ -89,23 +88,18 @@ body {
     padding-right: 5vh;
     padding-top: 5px;
     color: #232e21;
-
-
 }
 
 .logo-inner {
     grid-area: logo;
     text-align: end;
     padding-right: 5vh;
-
 }
 
 .shopping-inner {
     grid-area: cart;
     text-align: right;
     padding-right: 15vh;
-
-
 }
 
 .shopping-inner span {
@@ -127,7 +121,6 @@ img {
     width: 100%;
     height: 100%;
     z-index: -1;
-
 }
 
 /* Change font family for header */
@@ -185,7 +178,6 @@ h3 {
 
 .second-about p {
     text-align: justify;
-
 }
 
 /******* About Page **********/
@@ -204,7 +196,6 @@ h3 {
 
 .second-about1 p {
     text-align: justify;
-
 }
 
 .content-keto button {
@@ -242,7 +233,6 @@ h3 {
     background-color: #563440;
     color: #aafcb8;
     text-align: center;
-
 }
 
 .seller h2 {
@@ -273,7 +263,6 @@ h3 {
     width: 150px;
     font-size: 17px;
     padding: 5px;
-
 }
 
 /* Promotion */
@@ -353,14 +342,12 @@ h3 {
     padding: 3px;
     box-shadow: none;
     width: 100%;
-
 }
 
 .container-contact1 form textarea {
     padding: 20px;
     box-shadow: none;
     width: 100%;
-
 }
 
 /* Adding color-bg and font, font-size for button */
@@ -416,12 +403,12 @@ footer {
 footer span,
 i {
     color: #000000;
-
 }
 
 
 footer .content {
-    width: 100% padding: 5px;
+    width: 100%;
+    padding: 5px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -436,26 +423,22 @@ a {
 footer .content .left {
     width: 10%;
     transition: all 0.4s ease;
-
 }
 
 footer .content .middle1 {
     width: 15%;
     transition: all 0.4s ease;
-
 }
 
 footer .content .middle2 {
     width: 7%;
     transition: all 0.4s ease;
-
 }
 
 
 footer .content .right1 {
     width: 35%;
     transition: all 0.4s ease;
-
 }
 
 footer .content .right2 {
@@ -518,23 +501,7 @@ footer .bottom {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*********** Desktop Screen **************/
+/******************* Desktop Screen *********************/
 @media screen and (min-width: 690px) {
 
     body {
@@ -564,22 +531,18 @@ footer .bottom {
         font-size: 22px;
         padding-right: 30px;
         padding-top: 10px;
-
-
     }
 
     .logo-inner {
         grid-area: logo;
         text-align: end;
         padding-right: 20px;
-
     }
 
     .shopping-inner {
         grid-area: cart;
         text-align: right;
         padding-right: 10vh;
-
     }
 
     .shopping-inner span {
@@ -595,7 +558,6 @@ footer .bottom {
     .showcase::before {
         content: '';
         background: url('../img/header-960.jpeg') no-repeat top center/cover;
-
     }
 
     /* Change font family for header */
@@ -642,7 +604,6 @@ footer .bottom {
         display: grid;
         grid-template-columns: 40% 55%;
         font-size: 16px;
-
     }
 
     .content-keto h3 {
@@ -673,14 +634,12 @@ footer .bottom {
         display: grid;
         grid-template-columns: 40% 55%;
         font-size: 16px;
-
     }
 
     .content-flavour h3 {
         grid-column-start: 1;
         grid-column-end: 3;
         border-top: none;
-
     }
 
     .img-flavour {
@@ -706,12 +665,10 @@ footer .bottom {
 
     .second-about .button-keto {
         font-size: 18px;
-
     }
 
     .second-about img {
         width: 180px;
-
     }
 
     /************* Products *******************/
@@ -727,12 +684,11 @@ footer .bottom {
         grid-area: h2;
         align-content: flex-start;
         color: #4f2030;
-
     }
 
     .seller1 {
         grid-area: text;
-        width: 0 auto;
+        width: auto;
         display: grid;
         grid-template-columns: 55% 45%;
         align-content: center;
@@ -743,7 +699,6 @@ footer .bottom {
     }
 
     .img-product {
-
         grid-row-start: 1;
         grid-row-end: 3;
     }
@@ -761,11 +716,9 @@ footer .bottom {
 
     .img-product img {
         width: 350px;
-
     }
 
     .button-product button {
-
         width: 190px;
         font-size: 22px;
         padding: 10px;
@@ -774,7 +727,7 @@ footer .bottom {
     /**************** Product page ****************/
     .product1 {
         width: 100%;
-  
+
     }
 
     .seller1 h2 {
@@ -784,7 +737,6 @@ footer .bottom {
     }
 
     .seller2 {
-
         display: flex;
         flex-direction: column;
         background-color: #4f2030;
